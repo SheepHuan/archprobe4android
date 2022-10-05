@@ -25,3 +25,7 @@
 
 1. 对于华为设备请注释`.with_aspect(aspects::img_cacheline_size)`，该部分执行时无法正确分配内存对象。
 2. 对于华为设备请注释`.with_aspect(aspects::const_mem_bandwidth)`，该部分执行时时间测试计算错误。
+
+
+
+结果存在了`/data/data/mobi.eis.archprobe4android/files/archprobe`中，详见`ArchProbeReport.json`。

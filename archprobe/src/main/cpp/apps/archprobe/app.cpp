@@ -1,6 +1,6 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT License.
-#include <signal.h>
+#include <csignal>
 #include "env.hpp"
 #include <jni.h>
 #include <android/log.h>
@@ -502,6 +502,7 @@ namespace aspects {
       env.create_kernel(program, "img_cacheline_size_y"),
     };
 
+    //TODO: HUAWEI Mate40Pro can't alloc max_width_height image2d
     cl::ImageFormat img_fmt(CL_RGBA, CL_FLOAT);
     cl::Image2D in_img =
       env.create_img_2d(0, img_fmt, MAX_IMG_WIDTH, MAX_IMG_HEIGHT);

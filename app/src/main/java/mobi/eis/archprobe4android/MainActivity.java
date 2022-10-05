@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 File filedir=new File(getFilesDir()+"/"+"archprobe");
                 filedir.mkdirs();
 //                System.out.println(filedir.getAbsolutePath());
-                NativeLib.main(filedir.getAbsolutePath()+File.pathSeparator);
+                NativeLib.main(filedir.getAbsolutePath()+"/");
             }
         }
     }
